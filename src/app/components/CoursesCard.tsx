@@ -2,14 +2,14 @@ import type { Course } from "../types/course";
  
 type CourseCardProps = { 
   course: Course; 
-  isFavorite: boolean; 
-  onToggleFavorite: (id: number) => void; 
+  onEdit: () => void; 
+  onDelete: () => void;
 }; 
  
 export default function CourseCard({ 
   course, 
-  isFavorite, 
-  onToggleFavorite, 
+  onEdit, 
+  onDelete, 
 }: CourseCardProps) { 
   return ( 
     <article className="bg-white border border-gray-200 p-4 mb-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"> 
